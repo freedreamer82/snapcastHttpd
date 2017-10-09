@@ -1,0 +1,9 @@
+[Unit]
+Description=Snapcast http wrapper Service
+
+[Service]
+ExecStart=/usr/bin/python /usr/local/bin/snapcastHttpd.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
